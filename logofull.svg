@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient: Electric Cyan → Deep Violet -->
+    <linearGradient id="apexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5A0"/>
+      <stop offset="100%" stop-color="#7B61FF"/>
+    </linearGradient>
+    
+    <!-- Soft glow for pulse effect -->
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5A0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00F5A0" stop-opacity="0"/>
+    </radialGradient>
+    
+    <style>
+      .wordmark { 
+        font-family: 'Clash Display', 'Manrope', 'Inter', system-ui, sans-serif; 
+        font-weight: 600; 
+        font-size: 34px; 
+        fill: #F1F5F9; 
+        letter-spacing: -0.5px;
+      }
+      .accent { fill: url(#apexGrad); }
+      .hex-stroke { 
+        stroke: url(#apexGrad); 
+        stroke-width: 3.5; 
+        fill: none; 
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  
+  <!-- Apex Node Icon -->
+  <g transform="translate(25, 22)">
+    <!-- Hexagon with broken top edge (arrow suggestion) -->
+    <path class="hex-stroke" d="
+      M 28 8 L 48 18 L 48 38 L 28 48 L 8 38 L 8 22
+      M 14 19 L 28 26
+      M 42 19 L 28 26
+    "/>
+    
+    <!-- Central pulse dot -->
+    <circle cx="28" cy="28" r="4.5" fill="#00F5A0"/>
+    <circle cx="28" cy="28" r="9" fill="url(#pulseGlow)" opacity="0.7"/>
+    
+    <!-- Micro accent: top arrow tip -->
+    <circle cx="28" cy="8" r="1.8" fill="#7B61FF"/>
+  </g>
+  
+  <!-- Wordmark: LinkindNet -->
+  <text x="82" y="56" class="wordmark">
+    Linkind<tspan class="accent">Net</tspan>
+  </text>
+  
+  <!-- Subtle underline accent under "Net" -->
+  <rect x="198" y="62" width="42" height="2.5" rx="1.2" class="accent" opacity="0.9"/>
+</svg>
