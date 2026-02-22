@@ -1,0 +1,655 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+
+                
+              </style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkindnet | 林克域 - Advanced WiFi Security</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontsource Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Optimized Smooth Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Simplified Glassmorphism - Reduced blur for performance */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(34, 211, 238, 0.4);
+            background: rgba(30, 41, 59, 0.95);
+            transform: translateY(-3px);
+        }
+
+        /* Text Gradient - Simplified animation */
+        .gradient-text {
+            background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Optimized Animations - Using transform only for better performance */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        /* Fade In Animation Class */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Background - No fixed attachment for performance */
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, #0f172a 100%), 
+                        url('https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/13d2e3555-1a1e-4cd2-a5a1-838b8a4964cd.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Button Glow - Simplified */
+        .btn-glow {
+            transition: all 0.3s ease;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+            transform: scale(1.03);
+        }
+
+        /* Nav Transition */
+        .nav-scrolled {
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Logo Styles */
+        .wordmark { 
+            font-family: 'Clash Display', 'Manrope', 'Inter', system-ui, sans-serif; 
+            font-weight: 600; 
+            font-size: 24px; 
+            fill: #F1F5F9; 
+            letter-spacing: -0.5px;
+        }
+        .wordmark1 { 
+            font-family: 'Clash Display', 'Manrope', 'Inter', system-ui, sans-serif; 
+            font-weight: 600; 
+            font-size: 24px; 
+            fill: #0080ff; 
+            letter-spacing: -0.5px;
+        }
+        .logo-accent { fill: url(#apexGrad); }
+        .logo-subtle { fill: #94A3B8; }
+        .hex-stroke { 
+            stroke: url(#apexGrad); 
+            stroke-width: 3.5; 
+            fill: none; 
+            stroke-linecap: round; 
+            stroke-linejoin: round;
+        }
+
+        /* Reduce paint areas */
+        .will-change-transform {
+            will-change: transform;
+        }
+
+        /* Image optimization */
+        img {
+            content-visibility: auto;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-3 group cursor-pointer">
+                    <svg width="300" height="55" viewBox="0 0 300 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="hover:opacity-90 transition-opacity">
+                        <defs>
+                            <linearGradient id="apexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00F5A0"/>
+                                <stop offset="100%" style="stop-color:#7B61FF"/>
+                            </linearGradient>
+                            <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#00F5A0" stop-opacity="0.6"/>
+                                <stop offset="100%" stop-color="#00F5A0" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                        
+                        <!-- Left Hex/Link Shape -->
+                        <path d="M12 27.5 C12 18, 18 10, 27 10 C36 10, 42 18, 42 27.5 C42 37, 36 45, 27 45 C18 45, 12 37, 12 27.5 Z" 
+                              class="hex-stroke" opacity="0.95"/>
+                        
+                        <!-- Right Hex/Link Shape (interlocked) -->
+                        <path d="M32 27.5 C32 18, 38 10, 47 10 C56 10, 62 18, 62 27.5 C62 37, 56 45, 47 45 C38 45, 32 37, 32 27.5 Z" 
+                              class="hex-stroke" opacity="0.95"/>
+                        
+                        <!-- Central pulse dot -->
+                        <circle cx="37" cy="27.5" r="4" fill="#00F5A0" class="animate-pulse-slow"/>
+                        <circle cx="37" cy="27.5" r="8" fill="url(#pulseGlow)" opacity="0.6"/>
+                        
+                        <!-- Micro accent: top arrow tip -->
+                        <circle cx="37" cy="7" r="2" fill="#7B61FF"/>
+                        
+                        <!-- Company Name -->
+                        <text x="70" y="32" class="wordmark">LinkindNet</text>
+                        <text x="200" y="32" class="wordmark1">林克域</text>
+                        
+                        <!-- Tagline -->
+                        <text x="100" y="46" font-family="'Inter', sans-serif" font-size="8" fill="#94A3B8" letter-spacing="0.6">Where everything is fortified</text>
+                    </svg>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#philosophy" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_philosophy">安全理念</a>
+                        <a href="#products" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_products">解决方案</a>
+                        <a href="#pricing" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_pricing">订阅方案</a>
+                        <a href="#contact" class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all" data-i18n="nav_contact">立即防护</a>
+                        <button id="lang-toggle" class="bg-slate-800 hover:bg-cyan-600 text-cyan-400 hover:text-white font-bold text-base border-2 border-cyan-500/50 hover:border-cyan-400 px-5 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-cyan-500/30">
+                            <span class="flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.148"></path></svg>
+                                中文
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-bg">
+        <div class="relative z-10 text-center max-w-5xl px-4 pt-20">
+            <div class="fade-in-section">
+                <span class="inline-block py-1 px-3 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wider mb-6" data-i18n="hero_badge">
+                    次世代網絡信息安全
+                </span>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight leading-tight text-white">
+                    <span data-i18n="hero_title_1">筑牢</span> <br>
+                    <span class="gradient-text" data-i18n="hero_title_2">数字疆域的隐形防线</span>
+                </h1>
+            </div>
+            
+            <p class="mt-4 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed fade-in-section" data-i18n="hero_subtitle">
+                先进的 WiFi 防火墙架构，旨在消除数字噪音，防止数据泄露，并在网络的无形注视下守护您的个人身份。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 fade-in-section">
+                <a href="#products" class="group relative px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-full transition-all btn-glow">
+                    <span class="relative z-10" data-i18n="hero_cta_primary">探索解决方案</span>
+                </a>
+                <a href="#contact" class="px-8 py-4 glass-panel hover:bg-slate-800 text-white font-semibold rounded-full transition-all" data-i18n="hero_cta_secondary">联系销售</a>
+            </div>
+        </div>
+        
+        <!-- Simple Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-slate-500">
+            <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-section">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight" data-i18n="philosophy_title">静默的<span class="text-cyan-400">防御架构</span></h2>
+                    <div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+                        <p data-i18n="philosophy_p1">
+                            在数据即生存货币的时代，隐私不再是默认选项——它是你必须构建的堡垒。林克域 (Linkindnet) 不仅仅是过滤流量；我们要重构您的私人生活与公共网格之间的边界。
+                        </p>
+                        <p data-i18n="philosophy_p2">
+                            我们专有的深度包检测 (DPI) 和启发式分析引擎如同静默的哨兵，在追踪脚本、广告注入向量、資料追蹤和恶意负载到达您的设备之前将其中和化。我们不只是拦截；我们是免疫。
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in-section">
+                    <img src="https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/13d2e3555-1a1e-4cd2-a5a1-838b8a4964cd.png" alt="Cyber Security Shield" class="rounded-2xl shadow-2xl border border-slate-700 w-full animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white" data-i18n="products_title">软硬协同的防御体系</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="products_subtitle">为不同规模的数字存在量身定制的防御机制。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Household Product -->
+                <div class="glass-panel rounded-2xl overflow-hidden fade-in-section">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/1c075bd0f-d171-46cd-9b8f-7d82db125757.png" alt="Home Firewall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_home_badge">家庭级 // MODEL-X1</div>
+                        <h3 class="text-2xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors" data-i18n="prod_home_title">林克域·家庭哨兵</h3>
+                        <p class="text-slate-400 mb-6" data-i18n="prod_home_desc">
+                            一款时尚、低调的网关，净化您的家庭网络。拦截侵入性广告，防止智能设备被追踪，确保您家人的数字足迹对数据经纪人不可见。
+                        </p>
+                        <ul class="space-y-2 mb-6 text-slate-300 text-sm">
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_1">全球广告拦截数据库</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_2">IoT 设备隔离</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_3">家长内容过滤</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enterprise Product -->
+                <div class="glass-panel rounded-2xl overflow-hidden fade-in-section">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/1b519e9a9-7cf8-482d-a275-b023c903b9eb.png" alt="Enterprise Firewall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_ent_badge">企业级 // MODEL-Z9</div>
+                        <h3 class="text-2xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors" data-i18n="prod_ent_title">林克域·企业核心</h3>
+                        <p class="text-slate-400 mb-6" data-i18n="prod_ent_desc">
+                            工业级吞吐量配合军用级加密。专为不容许数据泄露的企业环境设计。具备高级威胁情报和实时异常检测功能。
+                        </p>
+                        <ul class="space-y-2 mb-6 text-slate-300 text-sm">
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_4">深度包检测 (DPI)</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_5">零信任网络访问</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_6">7x24 小时安全运营中心集成</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="pricing_title">智能订阅方案</h2>
+                <p class="text-slate-400 text-lg" data-i18n="pricing_subtitle">持续更新的威胁数据库与软件功能。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col fade-in-section">
+                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_basic_name">基础卫士</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-white">$9.99</span><span class="text-slate-500">/月</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_basic_desc">专为注重隐私的个人设计。</p>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_1">基础广告拦截</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_2">恶意软件防护</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_3">支持 5 台设备</span></li>
+                    </ul>
+                    <button class="w-full py-3 border border-slate-600 rounded-lg hover:bg-slate-800 hover:border-cyan-500 transition-all text-white font-medium" data-i18n="btn_select">选择方案</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="glass-panel p-8 rounded-2xl border border-cyan-500/40 relative flex flex-col transform md:-translate-y-4 fade-in-section">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="badge_popular">热门</div>
+                    <h3 class="text-xl font-semibold text-cyan-400" data-i18n="plan_pro_name">家庭堡垒</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-white">$19.99</span><span class="text-slate-500">/月</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_pro_desc">为现代智能家居提供全面保护。</p>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_4">高级反追踪技术</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_5">IoT 设备分段隔离</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_6">无限设备支持</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_7">优先技术支持</span></li>
+                    </ul>
+                    <button class="w-full py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg transition-all text-white font-bold" data-i18n="btn_select">选择方案</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col fade-in-section">
+                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_ent_name">企业护盾</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-white">$99.00</span><span class="text-slate-500">/月</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_ent_desc">可扩展的基础设施安全方案。</p>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_8">DPI 与威胁情报</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_9">集中式管理仪表盘</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_10">SLA 服务等级协议保障</span></li>
+                    </ul>
+                    <button class="w-full py-3 border border-slate-600 rounded-lg hover:bg-slate-800 hover:border-cyan-500 transition-all text-white font-medium" data-i18n="btn_contact">联系销售</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white fade-in-section" data-i18n="contact_title">建立安全连接</h2>
+            <p class="text-slate-400 mb-10 text-lg fade-in-section" data-i18n="contact_subtitle">留下您的数字坐标。我们的安全专家将建立安全通道与您探讨需求。</p>
+            
+            <form id="contact-form" class="glass-panel p-8 rounded-2xl text-left fade-in-section">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-slate-400 text-sm font-bold mb-2" for="name" data-i18n="label_name">姓名</label>
+                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="name" type="text" placeholder="您的姓名">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-sm font-bold mb-2" for="email" data-i18n="label_email">电子邮箱</label>
+                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="email" type="email" placeholder="您的郵箱" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-slate-400 text-sm font-bold mb-2" for="message" data-i18n="label_message">留言 (可选)</label>
+                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors h-32 resize-none" id="message" placeholder="告诉我们您的安全需求..."></textarea>
+                </div>
+                <button class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-4 rounded-lg transition-all btn-glow text-lg" type="button" onclick="sendEmail()" data-i18n="btn_submit">
+                    发送请求
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <span class="font-bold text-lg text-slate-300">Linkindnet <span class="text-cyan-600">林克域</span></span>
+                <p class="text-slate-600 text-sm mt-1">© 2026 Linkindnet Security Solutions.</p>
+            </div>
+            <div class="flex space-x-6 text-slate-500 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors">隐私政策</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">服务条款</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">安全白皮书</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Email configuration - CHANGE THIS TO YOUR EMAIL
+        const CONTACT_EMAIL = "linkind140@gamil.com";
+
+        // Send email function using mailto
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!email) {
+                alert('请输入您的电子邮箱地址');
+                return;
+            }
+
+            const subject = encodeURIComponent(`[Linkindnet 咨询] ${name || '匿名'} - 安全方案咨询`);
+            const body = encodeURIComponent(
+                `姓名：${name || '未提供'}\n` +
+                `邮箱：${email}\n` +
+                `留言：${message || '无'}\n\n` +
+                `---\n` +
+                `此邮件来自 Linkindnet 网站联系表单`
+            );
+
+            window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+        }
+
+        // Optimized Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Navbar Scroll Effect - Optimized
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const nav = document.getElementById('navbar');
+                    if (window.scrollY > 50) {
+                        nav.classList.add('nav-scrolled');
+                        nav.classList.remove('py-4');
+                        nav.classList.add('py-2');
+                    } else {
+                        nav.classList.remove('nav-scrolled');
+                        nav.classList.remove('py-2');
+                        nav.classList.add('py-4');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Language Data
+        const translations = {
+            en: {
+                hero_badge: "NEXT GEN NETWORK SECURITY",
+                nav_philosophy: "Philosophy",
+                nav_products: "Solutions",
+                nav_pricing: "Pricing",
+                nav_contact: "Secure Now",
+                hero_title_1: "Fortifying the",
+                hero_title_2: "Invisible Perimeter",
+                hero_subtitle: "Advanced WiFi firewall architecture designed to silence digital noise, prevent data leaks, and shield your personal identity from the unseen gaze of the web.",
+                hero_cta_primary: "Explore Solutions",
+                hero_cta_secondary: "Contact Sales",
+                philosophy_title: "The Architecture of <span class=\"text-cyan-400\">Silence</span>",
+                philosophy_p1: "In an era where data is the currency of existence, privacy is no longer a default—it is a fortress you must build. Linkindnet (林克域) does not merely filter traffic; we reconstruct the boundary between your private life and the public grid.",
+                philosophy_p2: "Our proprietary deep-packet inspection and heuristic analysis engines stand as silent sentinels, neutralizing tracking scripts, ad-injection vectors, data tracking, and malicious payloads before they ever reach your device. We don't just block; we immunize.",
+                prod_home_badge: "HOUSEHOLD GRADE // MODEL-X1",
+                prod_ent_badge: "ENTERPRISE GRADE // MODEL-Z9",
+                products_title: "Hardware & Software Synergy",
+                products_subtitle: "Tailored defense mechanisms for every scale of digital existence.",
+                prod_home_title: "Linkind Home Sentinel",
+                prod_home_desc: "A sleek, unobtrusive gateway that sanitizes your home network. Blocks intrusive ads, prevents smart-device tracking, and ensures your family's digital footprint remains invisible to data brokers.",
+                prod_ent_title: "Linkind Enterprise Core",
+                prod_ent_desc: "Industrial-grade throughput with military-grade encryption. Designed for corporate environments where data leakage is not an option. Features advanced threat intelligence and real-time anomaly detection.",
+                feat_1: "Global Ad-Blocking Database",
+                feat_2: "IoT Device Isolation",
+                feat_3: "Parental Content Filtering",
+                feat_4: "Deep Packet Inspection (DPI)",
+                feat_5: "Zero-Trust Network Access",
+                feat_6: "24/7 SOC Integration",
+                pricing_title: "Subscription Intelligence",
+                pricing_subtitle: "Continuous updates to our threat database and software features.",
+                plan_basic_name: "Essential Guard",
+                plan_basic_desc: "For the privacy-conscious individual.",
+                plan_feat_1: "Basic Ad Blocking",
+                plan_feat_2: "Malware Protection",
+                plan_feat_3: "5 Devices",
+                plan_pro_name: "Family Fortress",
+                plan_pro_desc: "Complete protection for the modern smart home.",
+                plan_feat_4: "Advanced Anti-Tracking",
+                plan_feat_5: "IoT Device Segmentation",
+                plan_feat_6: "Unlimited Devices",
+                plan_feat_7: "Priority Support",
+                plan_ent_name: "Corporate Shield",
+                plan_ent_desc: "Scalable security for business infrastructure.",
+                plan_feat_8: "DPI & Threat Intel",
+                plan_feat_9: "Centralized Dashboard",
+                plan_feat_10: "SLA Guarantee",
+                badge_popular: "POPULAR",
+                btn_select: "Select Plan",
+                btn_contact: "Contact Sales",
+                contact_title: "Initiate Secure Connection",
+                contact_subtitle: "Leave your digital coordinates. Our security specialists will establish a secure channel to discuss your needs.",
+                label_name: "Name",
+                label_email: "Email Address",
+                label_message: "Message (Optional)",
+                btn_submit: "Transmit Request"
+            },
+            zh: {
+                hero_badge: "次世代網絡信息安全",
+                nav_philosophy: "安全理念",
+                nav_products: "解决方案",
+                nav_pricing: "订阅方案",
+                nav_contact: "立即防护",
+                hero_title_1: "筑牢",
+                hero_title_2: "数字疆域的隐形防线",
+                hero_subtitle: "先进的 WiFi 防火墙架构，旨在消除数字噪音，防止数据泄露，并在网络的无形注视下守护您的个人身份。",
+                hero_cta_primary: "探索解决方案",
+                hero_cta_secondary: "联系销售",
+                philosophy_title: "静默的<span class=\"text-cyan-400\">防御架构</span>",
+                philosophy_p1: "在数据即生存货币的时代，隐私不再是默认选项——它是你必须构建的堡垒。林克域 (Linkindnet) 不仅仅是过滤流量；我们要重构您的私人生活与公共网格之间的边界。",
+                philosophy_p2: "我们专有的深度包检测 (DPI) 和启发式分析引擎如同静默的哨兵，在追踪脚本、广告注入向量、資料追蹤和恶意负载到达您的设备之前将其中和化。我们不只是拦截；我们是免疫。",
+                prod_home_badge: "家庭级 // MODEL-X1",
+                prod_ent_badge: "企业级 // MODEL-Z9",
+                products_title: "软硬协同的防御体系",
+                products_subtitle: "为不同规模的数字存在量身定制的防御机制。",
+                prod_home_title: "林克域·家庭哨兵",
+                prod_home_desc: "一款时尚、低调的网关，净化您的家庭网络。拦截侵入性广告，防止智能设备被追踪，确保您家人的数字足迹对数据经纪人不可见。",
+                prod_ent_title: "林克域·企业核心",
+                prod_ent_desc: "工业级吞吐量配合军用级加密。专为不容许数据泄露的企业环境设计。具备高级威胁情报和实时异常检测功能。",
+                feat_1: "全球广告拦截数据库",
+                feat_2: "IoT 设备隔离",
+                feat_3: "家长内容过滤",
+                feat_4: "深度包检测 (DPI)",
+                feat_5: "零信任网络访问",
+                feat_6: "7x24 小时安全运营中心集成",
+                pricing_title: "智能订阅方案",
+                pricing_subtitle: "持续更新的威胁数据库与软件功能。",
+                plan_basic_name: "基础卫士",
+                plan_basic_desc: "专为注重隐私的个人设计。",
+                plan_feat_1: "基础广告拦截",
+                plan_feat_2: "恶意软件防护",
+                plan_feat_3: "支持 5 台设备",
+                plan_pro_name: "家庭堡垒",
+                plan_pro_desc: "为现代智能家居提供全面保护。",
+                plan_feat_4: "高级反追踪技术",
+                plan_feat_5: "IoT 设备分段隔离",
+                plan_feat_6: "无限设备支持",
+                plan_feat_7: "优先技术支持",
+                plan_ent_name: "企业护盾",
+                plan_ent_desc: "可扩展的基础设施安全方案。",
+                plan_feat_8: "DPI 与威胁情报",
+                plan_feat_9: "集中式管理仪表盘",
+                plan_feat_10: "SLA 服务等级协议保障",
+                badge_popular: "热门",
+                btn_select: "选择方案",
+                btn_contact: "联系销售",
+                contact_title: "建立安全连接",
+                contact_subtitle: "留下您的数字坐标。我们的安全专家将建立安全通道与您探讨需求。",
+                label_name: "姓名",
+                label_email: "电子邮箱",
+                label_message: "留言 (可选)",
+                btn_submit: "发送请求"
+            }
+        };
+
+        // Language Toggle Logic - Default is Chinese (zh)
+        let currentLang = 'zh';
+        const langToggleBtn = document.getElementById('lang-toggle');
+
+        function updateLangButton() {
+            langToggleBtn.innerHTML = `
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.148"></path></svg>
+                    ${currentLang === 'en' ? 'EN' : '中文'}
+                </span>
+            `;
+        }
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            updateLangButton();
+            updateContent();
+        });
+
+        function updateContent() {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key];
+                }
+            });
+            document.documentElement.lang = currentLang;
+        }
+
+        // Initialize on page load
+        updateLangButton();
+    </script>
+</body>
+</html>
+
+
+
+                        </body>
+                        </html>
+                    
