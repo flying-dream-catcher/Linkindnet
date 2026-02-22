@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服務政策 Service Policy - Linkindnet/林克域</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.fontsource.org/1.0.0/inter/index.css" rel="stylesheet">
+    <link href="https://cdn.fontsource.org/1.0.0/noto-sans-tc/index.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+        }
+        .prose h2 {
+            color: #1e3a8a;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #374151;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,1));
+        }
+        .lang-toggle {
+            transition: all 0.3s ease;
+        }
+        .lang-toggle.active {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        .bilingual-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .bilingual-section {
+                grid-template-columns: 1fr;
+            }
+        }
+        .security-highlight {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            color: white;
+            box-shadow: 0 20px 60px rgba(30, 58, 138, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .security-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 4s infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(-20px, -20px);
+            }
+        }
+        .security-highlight h2,
+        .security-highlight h3 {
+            color: white;
+        }
+        .security-highlight p,
+        .security-highlight ul,
+        .security-highlight li {
+            color: rgba(255, 255, 255, 0.95);
+        }
+        .security-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        .trust-badge {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .commitment-box {
+            border-left: 4px solid #1e3a8a;
+            background: #eff6ff;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .commitment-box strong {
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 
+    ========================================
+    CONFIGURATION SECTION - 配置區域
+    ========================================
+    Edit the date below to update the "Last Updated" date
+    在下方編輯日期以更新「最後更新」日期
+    Format 格式：YYYY-MM-DD
+    -->
+    <script>
+        // ========================================
+        // ADJUSTABLE DATE - 可調整日期
+        // ========================================
+        const LAST_UPDATED_DATE = "2025-01-15"; // Change this date / 修改此日期
+        // ========================================
+    </script>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-900 tracking-tight">Linkindnet<span class="text-blue-500">/林克域</span></span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    </a>
+                    <button id="lang-zh" class="lang-toggle active px-3 py-2 rounded-md text-sm font-medium" onclick="switchLang('zh')">中文</button>
+                    <button id="lang-en" class="lang-toggle px-3 py-2 rounded-md text-sm font-medium" onclick="switchLang('en')">English</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="https://image.qwenlm.ai/public_source/9935b03b-b97f-47a9-b4d1-1f4ef02f5910/1c2870161-6479-4fbd-bc54-b45853e58480.png" alt="Digital Network Security 數字網絡安全">
+            <div class="absolute inset-0 hero-gradient" aria-hidden="true"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center trust-badge mb-6">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <span class="lang-zh lang-both">企業級安全認證</span>
+                <span class="lang-en hidden">Enterprise Security Certified</span>
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                <span class="lang-zh lang-both">服務政策</span>
+                <span class="lang-en hidden">Service Policy</span>
+            </h1>
+            <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                <span class="lang-zh lang-both">林克域致力於為您提供安全、可靠、高質量的服務。我們採用行業領先的技術標準，確保您的數據和服務體驗始終處於最佳狀態。</span>
+                <span class="lang-en hidden">Linkindnet is committed to providing you with secure, reliable, and high-quality services. We use industry-leading technical standards to ensure your data and service experience are always at their best.</span>
+            </p>
+            <div class="mt-4 text-sm text-gray-500">
+                <span class="lang-zh lang-both">最後更新：</span>
+                <span class="lang-en hidden">Last Updated:</span>
+                <span id="current-date" class="font-semibold"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white shadow-xl rounded-lg -mt-10 relative z-10 border border-gray-100">
+        <div class="prose prose-blue max-w-none">
+            
+            <!-- HIGHLIGHTED SECURITY SECTION - 突出的安全部分 -->
+            <div class="security-highlight mb-12">
+                <div class="relative z-10">
+                    <div class="flex items-center mb-6">
+                        <svg class="security-icon w-16 h-16 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">
+                                <span class="lang-zh lang-both">🛡️ 個人數據與數據安全承諾</span>
+                                <span class="lang-en hidden">🛡️ Personal Data & Data Security Commitment</span>
+                            </h2>
+                            <p class="text-lg opacity-90">
+                                <span class="lang-zh lang-both">您的數據安全是我們服務的核心</span>
+                                <span class="lang-en hidden">Your data security is at the core of our service</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="feature-card">
+                            <div class="flex items-center mb-3">
+                                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                                <h3 class="font-bold text-lg">
+                                    <span class="lang-zh lang-both">個人數據保護</span>
+                                    <span class="lang-en hidden">Personal Data Protection</span>
+                                </h3>
+                            </div>
+                            <ul class="text-sm space-y-2 opacity-90">
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">所有個人數據均採用 AES-256 加密存儲</span>
+                                    <span class="lang-en hidden">All personal data encrypted with AES-256</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">嚴格的數據訪問權限控制</span>
+                                    <span class="lang-en hidden">Strict data access permission control</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">定期數據安全審計與評估</span>
+                                    <span class="lang-en hidden">Regular data security audits</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">符合 GDPR 及國際數據保護標準</span>
+                                    <span class="lang-en hidden">Compliant with GDPR & international standards</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="flex items-center mb-3">
+                                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                </svg>
+                                <h3 class="font-bold text-lg">
+                                    <span class="lang-zh lang-both">系統數據安全</span>
+                                    <span class="lang-en hidden">System Data Security</span>
+                                </h3>
+                            </div>
+                            <ul class="text-sm space-y-2 opacity-90">
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">99.99% 服務可用性保證</span>
+                                    <span class="lang-en hidden">99.99% service availability guarantee</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">多重備份與災難恢復機制</span>
+                                    <span class="lang-en hidden">Multiple backups & disaster recovery</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">24/7 安全監控與威脅檢測</span>
+                                    <span class="lang-en hidden">24/7 security monitoring & threat detection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-2">✓</span>
+                                    <span class="lang-zh lang-both">ISO 27001 信息安全管理体系</span>
+                                    <span class="lang-en hidden">ISO 27001 information security management</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commitment Box -->
+            <div class="commitment-box">
+                <p class="mb-0">
+                    <strong class="lang-zh lang-both">我們的承諾：</strong>
+                    <strong class="lang-en hidden">Our Commitment:</strong>
+                    <span class="lang-zh lang-both"> 林克域保證不會出售、出租或共享您的個人數據給任何第三方，除非法律要求或獲得您的明確授權。我們將持續投資安全技術，確保您的數據始終受到最高級別的保護。</span>
+                    <span class="lang-en hidden"> Linkindnet guarantees that we will not sell, rent, or share your personal data with any third party unless required by law or with your explicit authorization. We will continue to invest in security technology to ensure your data is always protected at the highest level.</span>
+                </p>
+            </div>
+
+            <!-- Section 1 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>1. 服務範圍</h2>
+                    <p>林克域提供包括但不限於以下服務：</p>
+                    <ul>
+                        <li>網絡安全解決方案與諮詢服務</li>
+                        <li>數據存儲與管理服務</li>
+                        <li>數據傳輸與加密服務</li>
+                        <li>系統監控與維護服務</li>
+                        <li>技術支持與培訓服務</li>
+                    </ul>
+                    <p>我們保留根據業務發展需要調整服務範圍的權利，並將提前通知用戶任何重大變更。</p>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>1. Scope of Services</h2>
+                    <p>Linkindnet provides services including but not limited to:</p>
+                    <ul>
+                        <li>Network security solutions and consulting services</li>
+                        <li>Data storage and management services</li>
+                        <li>Data transmission and encryption services</li>
+                        <li>System monitoring and maintenance services</li>
+                        <li>Technical support and training services</li>
+                    </ul>
+                    <p>We reserve the right to adjust the scope of services according to business development needs and will notify users in advance of any significant changes.</p>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>2. 服務質量保證</h2>
+                    <p>我們致力於提供高質量的服務，具體保證如下：</p>
+                    <ul>
+                        <li><strong>服務可用性：</strong> 保證 99.99% 的系統正常運行時間</li>
+                        <li><strong>響應時間：</strong> 技術支持請求在 72 小時內響應</li>
+                        <li><strong>數據完整性：</strong> 確保數據傳輸和存儲的完整性</li>
+                        <li><strong>性能標準：</strong> 符合行業領先的性能指標</li>
+                    </ul>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>2. Service Quality Assurance</h2>
+                    <p>We are committed to providing high-quality services with the following guarantees:</p>
+                    <ul>
+                        <li><strong>Service Availability:</strong> 99.99% system uptime guarantee</li>
+                        <li><strong>Response Time:</strong> Technical support requests responded within 72 hours</li>
+                        <li><strong>Data Integrity:</strong> Ensure integrity of data transmission and storage</li>
+                        <li><strong>Performance Standards:</strong> Meet industry-leading performance metrics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>3. 用戶責任</h2>
+                    <p>為確保服務的安全和有效使用，用戶應：</p>
+                    <ul>
+                        <li>提供準確、完整的註冊信息</li>
+                        <li>妥善保管賬戶憑證，不向第三方透露</li>
+                        <li>及時更新密碼，使用強密碼策略</li>
+                        <li>報告任何可疑活動或安全漏洞</li>
+                        <li>遵守所有適用的法律法規</li>
+                        <li>不從事任何危害系統安全的行為</li>
+                    </ul>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>3. User Responsibilities</h2>
+                    <p>To ensure secure and effective use of services, users shall:</p>
+                    <ul>
+                        <li>Provide accurate and complete registration information</li>
+                        <li>Safeguard account credentials and not disclose to third parties</li>
+                        <li>Update passwords timely and use strong password policies</li>
+                        <li>Report any suspicious activities or security vulnerabilities</li>
+                        <li>Comply with all applicable laws and regulations</li>
+                        <li>Not engage in any activities that endanger system security</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>4. 數據安全保護措施</h2>
+                    <p>林克域採取以下措施保護您的數據安全：</p>
+                    <ul>
+                        <li><strong>加密技術：</strong> 所有數據傳輸採用 TLS 1.3 協議，存儲數據採用 AES-256 加密</li>
+                        <li><strong>訪問控制：</strong> 實施多因素認證和基於角色的訪問控制</li>
+                        <li><strong>網絡防護：</strong> 部署防火牆、入侵檢測和防禦系統</li>
+                        <li><strong>安全審計：</strong> 定期進行滲透測試和安全評估</li>
+                        <li><strong>員工培訓：</strong> 所有員工接受數據安全培訓並簽署保密協議</li>
+                    </ul>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>4. Data Security Protection Measures</h2>
+                    <p>Linkindnet takes the following measures to protect your data security:</p>
+                    <ul>
+                        <li><strong>Encryption:</strong> All data transmission uses TLS 1.3 protocol, storage data uses AES-256 encryption</li>
+                        <li><strong>Access Control:</strong> Implement multi-factor authentication and role-based access control</li>
+                        <li><strong>Network Protection:</strong> Deploy firewalls, intrusion detection and prevention systems</li>
+                        <li><strong>Security Audits:</strong> Regular penetration testing and security assessments</li>
+                        <li><strong>Employee Training:</strong> All employees receive data security training and sign confidentiality agreements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>5. 服務費用與支付</h2>
+                    <p>服務費用根據所選服務套餐確定，具體價格請參考官方網站或聯繫銷售團隊。</p>
+                    <ul>
+                        <li>所有費用以港幣（HKD）或美元（USD）計價</li>
+                        <li>支持多種支付方式：信用卡、銀行轉賬、支付寶等</li>
+                        <li>費用調整將提前 30 天通知</li>
+                        <li>退款政策按服務級別協議執行</li>
+                    </ul>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>5. Service Fees and Payment</h2>
+                    <p>Service fees are determined based on the selected service package. Please refer to the official website or contact the sales team for specific prices.</p>
+                    <ul>
+                        <li>All fees are priced in Hong Kong Dollar (HKD) or US Dollar (USD)</li>
+                        <li>Multiple payment methods supported: credit card, bank transfer, Alipay, etc.</li>
+                        <li>Fee adjustments will be notified 30 days in advance</li>
+                        <li>Refund policy is executed according to the Service Level Agreement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>6. 服務中斷與免責</h2>
+                    <p>在以下情況下，我們可能暫停或中斷服務而不承擔責任：</p>
+                    <ul>
+                        <li>計劃內維護（將提前 48 小時通知）</li>
+                        <li>不可抗力事件（如自然災害、戰爭等）</li>
+                        <li>第三方服務提供商問題</li>
+                        <li>用戶違反服務政策導致的中斷</li>
+                        <li>法律法規要求</li>
+                    </ul>
+                    <p>我們將盡力減少服務中斷的影響並盡快恢復服務。</p>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>6. Service Interruption and Disclaimer</h2>
+                    <p>We may suspend or interrupt services without liability in the following circumstances:</p>
+                    <ul>
+                        <li>Scheduled maintenance (48 hours advance notice)</li>
+                        <li>Force majeure events (such as natural disasters, war, etc.)</li>
+                        <li>Third-party service provider issues</li>
+                        <li>Interruptions caused by user violation of service policies</li>
+                        <li>Legal and regulatory requirements</li>
+                    </ul>
+                    <p>We will make every effort to minimize the impact of service interruptions and restore services as soon as possible.</p>
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>7. 知識產權</h2>
+                    <p>林克域服務中包含的所有內容，包括但不限於：</p>
+                    <ul>
+                        <li>軟件、代碼和算法</li>
+                        <li>文檔、教程和培訓材料</li>
+                        <li>商標、標誌和品牌元素</li>
+                        <li>設計、界面和用戶體驗</li>
+                    </ul>
+                    <p>均歸林克域所有，受知識產權法律保護。未經書面許可，不得複製、分發或用於商業目的。</p>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>7. Intellectual Property</h2>
+                    <p>All content included in Linkindnet services, including but not limited to:</p>
+                    <ul>
+                        <li>Software, code, and algorithms</li>
+                        <li>Documentation, tutorials, and training materials</li>
+                        <li>Trademarks, logos, and brand elements</li>
+                        <li>Designs, interfaces, and user experiences</li>
+                    </ul>
+                    <p>Are owned by Linkindnet and protected by intellectual property laws. Reproduction, distribution, or commercial use without written permission is prohibited.</p>
+                </div>
+            </div>
+
+            <!-- Section 8 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>8. 服務終止</h2>
+                    <p>在以下情況下，我們有權終止服務：</p>
+                    <ul>
+                        <li>用戶嚴重違反服務政策</li>
+                        <li>用戶從事非法活動</li>
+                        <li>用戶連續 90 天未使用服務</li>
+                        <li>法律法規要求</li>
+                    </ul>
+                    <p>服務終止前，我們將提供合理通知（緊急情況除外），並協助用戶導出其數據。</p>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>8. Service Termination</h2>
+                    <p>We reserve the right to terminate services in the following circumstances:</p>
+                    <ul>
+                        <li>User seriously violates service policies</li>
+                        <li>User engages in illegal activities</li>
+                        <li>User has not used the service for 90 consecutive days</li>
+                        <li>Legal and regulatory requirements</li>
+                    </ul>
+                    <p>Before service termination, we will provide reasonable notice (except in emergencies) and assist users in exporting their data.</p>
+                </div>
+            </div>
+
+            <!-- Section 9 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>9. 爭議解決</h2>
+                    <p>本服務政策受中華人民共和國法律管轄。任何爭議應首先通過友好協商解決。如協商不成，任何一方均可向林克域所在地有管轄權的人民法院提起訴訟。</p>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>9. Dispute Resolution</h2>
+                    <p>This service policy is governed by the laws of the People's Republic of China. Any disputes shall first be resolved through friendly negotiation. If negotiation fails, either party may file a lawsuit with the competent people's court at Linkindnet's location.</p>
+                </div>
+            </div>
+
+            <!-- Section 10 -->
+            <div class="bilingual-section mb-8">
+                <div class="lang-zh lang-both">
+                    <h2>10. 聯繫我們</h2>
+                    <p>如有任何關於服務政策的問題，請通過以下方式聯繫我們：</p>
+                    <ul>
+                        <li><strong>電子郵件：</strong> linkind139@gmail.com</li>
+                        <li><strong>安全事件報告：</strong> linkind139@gmail.com</li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="lang-en hidden">
+                    <h2>10. Contact Us</h2>
+                    <p>If you have any questions about the service policy, please contact us through the following methods:</p>
+                    <ul>
+                        <li><strong>Email:</strong> linkind139@gmail.com</li>
+                        <li><strong>Security Incident Report:</strong> linkind139@gmail.com</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-12 pt-8 border-t border-gray-200 flex justify-center flex-wrap gap-4">
+            <button onclick="window.print()" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                <span class="lang-zh lang-both">打印政策</span>
+                <span class="lang-en hidden">Print Policy</span>
+            </button>
+            <button onclick="downloadPDF()" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <span class="lang-zh lang-both">下載</span>
+                <span class="lang-en hidden">Download</span>
+           
+            </a>
+        </div>
+
+        <!-- Date Configuration Notice -->
+       
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-20">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center flex-col md:flex-row">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold">Linkindnet/林克域</span>
+                    <p class="text-gray-400 text-sm mt-1">
+                        <span class="lang-zh lang-both">安全連接您與未來。</span>
+                        <span class="lang-en hidden">Connecting you to the future securely.</span>
+                    </p>
+                </div>
+               
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                &copy; <span id="year"></span> Linkindnet/林克域. 
+                <span class="lang-zh lang-both">版權所有。</span>
+                <span class="lang-en hidden">All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the last updated date from the configurable variable
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        document.getElementById('current-date').textContent = formatDate(LAST_UPDATED_DATE);
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Language switching function
+        function switchLang(lang) {
+            // Update button states
+            document.querySelectorAll('.lang-toggle').forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-900', 'text-white');
+                btn.classList.add('text-gray-500');
+            });
+            document.getElementById('lang-' + lang).classList.add('active', 'bg-blue-900', 'text-white');
+            document.getElementById('lang-' + lang).classList.remove('text-gray-500');
+
+            // Show/hide language sections
+            document.querySelectorAll('.lang-zh').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.querySelectorAll('.lang-en').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.querySelectorAll('.lang-both').forEach(el => {
+                el.classList.add('hidden');
+            });
+
+            if (lang === 'zh') {
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.remove('hidden'));
+            } else if (lang === 'en') {
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('hidden'));
+            } else if (lang === 'both') {
+                document.querySelectorAll('.lang-both').forEach(el => el.classList.remove('hidden'));
+            }
+
+            // Save preference
+            localStorage.setItem('preferred-lang', lang);
+        }
+
+        // Load saved language preference
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang') || 'zh';
+            switchLang(savedLang);
+        });
+
+        // Download function
+        function downloadPDF() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
+
