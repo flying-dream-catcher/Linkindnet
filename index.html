@@ -382,22 +382,22 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white fade-in-section" data-i18n="contact_title">建立安全连接</h2>
             <p class="text-slate-400 mb-10 text-lg fade-in-section" data-i18n="contact_subtitle">留下您的数字坐标。我们的安全专家将建立安全通道与您探讨需求。</p>
             
-            <form id="contact-form" class="glass-panel p-8 rounded-2xl text-left fade-in-section">
+            <form action="https://formsubmit.co/linkind140@gamil.com" method="POST" class="glass-panel p-8 rounded-2xl text-left fade-in-section">
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label class="block text-slate-400 text-sm font-bold mb-2" for="name" data-i18n="label_name">姓名</label>
-                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="name" type="text" placeholder="您的姓名">
+                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="name" name="name" type="text" placeholder="您的姓名">
                     </div>
                     <div>
                         <label class="block text-slate-400 text-sm font-bold mb-2" for="email" data-i18n="label_email">电子邮箱</label>
-                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="email" type="email" placeholder="您的郵箱" required>
+                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="email" name="email" type="email" placeholder="您的郵箱" required>
                     </div>
                 </div>
                 <div class="mb-6">
                     <label class="block text-slate-400 text-sm font-bold mb-2" for="message" data-i18n="label_message">留言 (可选)</label>
-                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors h-32 resize-none" id="message" placeholder="告诉我们您的安全需求..."></textarea>
+                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors h-32 resize-none" id="message" name="message" placeholder="告诉我们您的安全需求..."></textarea>
                 </div>
-                <button class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-4 rounded-lg transition-all btn-glow text-lg" type="button" onclick="sendEmail()" data-i18n="btn_submit">
+                <button class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-4 rounded-lg transition-all btn-glow text-lg" type="submit" data-i18n="btn_submit">
                     发送请求
                 </button>
             </form>
