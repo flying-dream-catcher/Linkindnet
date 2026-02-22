@@ -142,6 +142,14 @@
             fill: #46beff; 
             letter-spacing: -0.5px;
         }
+        .contact { 
+            background: rgba(15, 23, 42, 0.95);
+            font-family: 'Clash Display', 'Manrope', 'Inter', system-ui, sans-serif; 
+            font-weight: 600; 
+            font-size: 24px; 
+            fill: #ffffff; 
+            letter-spacing: -0.5px;
+        }
         .logo-accent { fill: url(#apexGrad); }
         .logo-subtle { fill: #94A3B8; }
         .hex-stroke { 
@@ -199,9 +207,9 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#philosophy" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_philosophy">安全理念</a>
-                        <a href="#products" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_products">解决方案</a>
-                        <a href="#pricing" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_pricing">订阅方案</a>
-                        <a href="#contact" class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all" data-i18n="nav_contact">立即防护</a>
+                        <a href="#products" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_products">解決方案</a>
+                        <a href="#pricing" class="text-slate-300 hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav_pricing">訂閱方案</a>
+                        <a href="#contact" class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all" data-i18n="nav_contact">立即防護</a>
                         <button id="lang-toggle" class="bg-slate-800 hover:bg-cyan-600 text-cyan-400 hover:text-white font-bold text-base border-2 border-cyan-500/50 hover:border-cyan-400 px-5 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-cyan-500/30">
                             <span class="flex items-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.148"></path></svg>
@@ -219,23 +227,23 @@
         <div class="relative z-10 text-center max-w-5xl px-4 pt-20">
             <div class="fade-in-section">
                 <span class="inline-block py-1 px-3 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wider mb-6" data-i18n="hero_badge">
-                    次世代網絡信息安全
+                    次世代網絡資訊安全
                 </span>
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight leading-tight text-white">
-                    <span data-i18n="hero_title_1">筑牢</span> <br>
-                    <span class="gradient-text" data-i18n="hero_title_2">数字疆域的隐形防线</span>
+                    <span data-i18n="hero_title_1">築牢</span> <br>
+                    <span class="gradient-text" data-i18n="hero_title_2">數位疆域的隱形防線</span>
                 </h1>
             </div>
             
             <p class="mt-4 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed fade-in-section" data-i18n="hero_subtitle">
-                先进的 WiFi 防火墙架构，旨在消除数字噪音，防止数据泄露，并在网络的无形注视下守护您的个人身份。
+                先進的 WiFi 防火牆架構，旨在消除數位噪音，防止資料外洩，並在網路的無形注視下守護您的個人身分。
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-6 fade-in-section">
-                <a href="#products" class="group relative px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-full transition-all btn-glow">
-                    <span class="relative z-10" data-i18n="hero_cta_primary">探索解决方案</span>
+                    <a href="#products" class="group relative px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-full transition-all btn-glow">
+                    <span class="relative z-10" data-i18n="hero_cta_primary">探索解決方案</span>
                 </a>
-                <a href="#contact" class="px-8 py-4 glass-panel hover:bg-slate-800 text-white font-semibold rounded-full transition-all" data-i18n="hero_cta_secondary">联系销售</a>
+                <a href="#contact" class="px-8 py-4 glass-panel hover:bg-slate-800 text-white font-semibold rounded-full transition-all" data-i18n="hero_cta_secondary">聯絡銷售</a>
             </div>
         </div>
         
@@ -250,13 +258,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="fade-in-section">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight" data-i18n="philosophy_title">静默的<span class="text-cyan-400">防御架构</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight" data-i18n="philosophy_title">靜默的<span class="text-cyan-400">防禦架構</span></h2>
                     <div class="space-y-6 text-slate-400 text-lg leading-relaxed">
                         <p data-i18n="philosophy_p1">
-                            在数据即生存货币的时代，隐私不再是默认选项——它是你必须构建的堡垒。林克域 (Linkindnet) 不仅仅是过滤流量；我们要重构您的私人生活与公共网格之间的边界。
+                            在資料即生存貨幣的時代，隱私不再是預設選項——它是您必須構築的堡壘。源自中國香港的林克域 (Linkindnet) 所採用的設備不僅僅是過濾流量；我們要重構您的私人生活與公共網格之間的邊界。
                         </p>
                         <p data-i18n="philosophy_p2">
-                            我们专有的深度包检测 (DPI) 和启发式分析引擎如同静默的哨兵，在追踪脚本、广告注入向量、資料追蹤和恶意负载到达您的设备之前将其中和化。我们不只是拦截；我们是免疫。
+                            我們專有的深度封包檢測 (DPI) 與啟發式分析引擎如同靜默的哨兵，在追蹤腳本、廣告注入向量、資料追蹤和惡意載荷抵達您的裝置之前將其中和。我們不只是攔截；我們是免疫。
                         </p>
                     </div>
                 </div>
@@ -271,26 +279,27 @@
     <section id="products" class="py-24 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-section">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white" data-i18n="products_title">软硬协同的防御体系</h2>
-                <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="products_subtitle">为不同规模的数字存在量身定制的防御机制。</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white" data-i18n="products_title">軟硬協同的防禦體系</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="products_subtitle">為不同規模的數位存在量身訂製的防禦機制。</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Household Product -->
                 <div class="glass-panel rounded-2xl overflow-hidden fade-in-section">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/1c075bd0f-d171-46cd-9b8f-7d82db125757.png" alt="Home Firewall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <img src="https://raw.githubusercontent.com/flying-dream-catcher/Linkindnet/refs/heads/main/Dell.jpg" alt="Home Firewall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8">
-                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_home_badge">家庭级 // MODEL-X1</div>
+                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_home_badge">家庭級 // MODEL-X1</div>
                         <h3 class="text-2xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors" data-i18n="prod_home_title">林克域·家庭哨兵</h3>
                         <p class="text-slate-400 mb-6" data-i18n="prod_home_desc">
-                            一款时尚、低调的网关，净化您的家庭网络。拦截侵入性广告，防止智能设备被追踪，确保您家人的数字足迹对数据经纪人不可见。
+                            一款時尚、低調的閘道，淨化您的家庭網路。攔截侵入性廣告，防止智慧裝置被追蹤，確保您家人的數位足跡對資料經紀人不可見。
                         </p>
                         <ul class="space-y-2 mb-6 text-slate-300 text-sm">
                             <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_1">全球广告拦截数据库</span></li>
-                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_2">IoT 设备隔离</span></li>
-                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_3">家长内容过滤</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_2">IoT 設備隔離</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_3">數據包加密</span></li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_7">家長內容過濾</span></li>
                         </ul>
                     </div>
                 </div>
@@ -301,10 +310,10 @@
                         <img src="https://image.qwenlm.ai/public_source/c35fcc91-9e16-471f-ae19-3ca88779317e/1b519e9a9-7cf8-482d-a275-b023c903b9eb.png" alt="Enterprise Firewall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8">
-                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_ent_badge">企业级 // MODEL-Z9</div>
+                        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-mono mb-4 border border-slate-700" data-i18n="prod_ent_badge">企業級 // MODEL-Z9</div>
                         <h3 class="text-2xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors" data-i18n="prod_ent_title">林克域·企业核心</h3>
                         <p class="text-slate-400 mb-6" data-i18n="prod_ent_desc">
-                            工业级吞吐量配合军用级加密。专为不容许数据泄露的企业环境设计。具备高级威胁情报和实时异常检测功能。
+                            工業級吞吐量配合軍用級加密。專為不可允許資料外洩的企業環境設計。具備高級威脅情報與即時異常偵測功能。
                         </p>
                         <ul class="space-y-2 mb-6 text-slate-300 text-sm">
                             <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span><span data-i18n="feat_4">深度包检测 (DPI)</span></li>
@@ -321,57 +330,55 @@
     <section id="pricing" class="py-24 bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-section">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="pricing_title">智能订阅方案</h2>
-                <p class="text-slate-400 text-lg" data-i18n="pricing_subtitle">持续更新的威胁数据库与软件功能。</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="pricing_title">智慧訂閱方案</h2>
+                <p class="text-slate-400 text-lg" data-i18n="pricing_subtitle">持續更新的威脅資料庫與軟體功能。</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Basic Plan -->
                 <div class="glass-panel p-8 rounded-2xl flex flex-col fade-in-section">
-                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_basic_name">基础卫士</h3>
+                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_basic_name">基礎衛士</h3>
                     <div class="my-6">
-                        <span class="text-4xl font-bold text-white">$9.99</span><span class="text-slate-500">/月</span>
+                        <span class="text-4xl font-bold text-white">HK$389</span><span class="text-slate-500">/月</span>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_basic_desc">专为注重隐私的个人设计。</p>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_basic_desc">專為注重隱私的個人設計。</p>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_1">基础广告拦截</span></li>
-                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_2">恶意软件防护</span></li>
-                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_3">支持 5 台设备</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_1">基礎廣告拦截</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_2">資料追蹤防护</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_3">數據包加密</span></li>
                     </ul>
-                    <button class="w-full py-3 border border-slate-600 rounded-lg hover:bg-slate-800 hover:border-cyan-500 transition-all text-white font-medium" data-i18n="btn_select">选择方案</button>
+                    
                 </div>
 
                 <!-- Pro Plan -->
                 <div class="glass-panel p-8 rounded-2xl border border-cyan-500/40 relative flex flex-col transform md:-translate-y-4 fade-in-section">
-                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="badge_popular">热门</div>
-                    <h3 class="text-xl font-semibold text-cyan-400" data-i18n="plan_pro_name">家庭堡垒</h3>
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="badge_popular">熱門</div>
+                    <h3 class="text-xl font-semibold text-cyan-400" data-i18n="plan_pro_name">家庭堡壘</h3>
                     <div class="my-6">
-                        <span class="text-4xl font-bold text-white">$19.99</span><span class="text-slate-500">/月</span>
+                        <span class="text-4xl font-bold text-white">HK$599</span><span class="text-slate-500">/月</span>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_pro_desc">为现代智能家居提供全面保护。</p>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_pro_desc">為現代智慧家庭提供全面保護。</p>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_4">高级反追踪技术</span></li>
-                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_5">IoT 设备分段隔离</span></li>
-                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_6">无限设备支持</span></li>
-                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_7">优先技术支持</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_4">高級反追蹤技術</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_5">IoT 設備分段隔離</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_6">廣域無綫設備支援</span></li>
+                        <li class="flex items-start text-white text-sm"><svg class="w-5 h-5 text-cyan-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_7">優先技術支援</span></li>
                     </ul>
-                    <button class="w-full py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg transition-all text-white font-bold" data-i18n="btn_select">选择方案</button>
+                   
                 </div>
 
                 <!-- Enterprise Plan -->
                 <div class="glass-panel p-8 rounded-2xl flex flex-col fade-in-section">
-                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_ent_name">企业护盾</h3>
+                    <h3 class="text-xl font-semibold text-slate-300" data-i18n="plan_ent_name">企業護盾</h3>
                     <div class="my-6">
-                        <span class="text-4xl font-bold text-white">$99.00</span><span class="text-slate-500">/月</span>
+                        <span class="text-4xl font-bold text-white">HK$1399</span><span class="text-slate-500">/月</span>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_ent_desc">可扩展的基础设施安全方案。</p>
+                    <p class="text-slate-400 text-sm mb-6" data-i18n="plan_ent_desc">可擴充的基礎架構安全方案。</p>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_8">DPI 与威胁情报</span></li>
+                        <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_8">DPI 與威脅情報</span></li>
                         <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_9">集中式管理仪表盘</span></li>
                         <li class="flex items-start text-slate-300 text-sm"><svg class="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span data-i18n="plan_feat_10">SLA 服务等级协议保障</span></li>
                     </ul>
-                    <button class="w-full py-3 border border-slate-600 rounded-lg hover:bg-slate-800 hover:border-cyan-500 transition-all text-white font-medium" data-i18n="btn_contact">联系销售</button>
-                </div>
             </div>
         </div>
     </section>
@@ -379,28 +386,15 @@
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-slate-950">
         <div class="max-w-3xl mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white fade-in-section" data-i18n="contact_title">建立安全连接</h2>
-            <p class="text-slate-400 mb-10 text-lg fade-in-section" data-i18n="contact_subtitle">留下您的数字坐标。我们的安全专家将建立安全通道与您探讨需求。</p>
-            
-            <form action="https://formsubmit.co/el/fejedi" method="POST" class="glass-panel p-8 rounded-2xl text-left fade-in-section">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label class="block text-slate-400 text-sm font-bold mb-2" for="name" data-i18n="label_name">姓名</label>
-                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="name" name="name" type="text" placeholder="您的姓名">
-                    </div>
-                    <div>
-                        <label class="block text-slate-400 text-sm font-bold mb-2" for="email" data-i18n="label_email">电子邮箱</label>
-                        <input class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors" id="email" name="email" type="email" placeholder="您的郵箱" required>
-                    </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white fade-in-section">立刻聯繫資安專家</h2>
+            <p class="text-slate-400 mb-10 text-lg fade-in-section">如需諮詢，請透過下面的電子郵件聯絡資安專家，為您提供一對一服務。</p>
+
+            <div class="glass-panel p-8 rounded-2xl text-left fade-in-section">
+                <div class="text-center">
+                    <p class="text-slate-400 mb-4">發送郵件到：</p>
+                    <a href="mailto:linkind140@gamil.com" class="inline-block text-2xl font-bold text-cyan-400 bg-slate-900 px-6 py-4 rounded-lg hover:bg-slate-800">linkind140@gamil.com</a>
                 </div>
-                <div class="mb-6">
-                    <label class="block text-slate-400 text-sm font-bold mb-2" for="message" data-i18n="label_message">留言 (可选)</label>
-                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-cyan-500 transition-colors h-32 resize-none" id="message" name="message" placeholder="告诉我们您的安全需求..."></textarea>
-                </div>
-                <button class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-4 rounded-lg transition-all btn-glow text-lg" type="submit" data-i18n="btn_submit">
-                    发送请求
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -412,9 +406,9 @@
                 <p class="text-slate-600 text-sm mt-1">© 2026 Linkindnet Security Solutions.</p>
             </div>
             <div class="flex space-x-6 text-slate-500 text-sm">
-                <a href="#" class="hover:text-cyan-400 transition-colors">隐私政策</a>
-                <a href="#" class="hover:text-cyan-400 transition-colors">服务条款</a>
-                <a href="#" class="hover:text-cyan-400 transition-colors">安全白皮书</a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors">隱私權政策</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">服務條款</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">安全白皮書</a>
             </div>
         </div>
     </footer>
@@ -430,17 +424,17 @@
             const message = document.getElementById('message').value;
 
             if (!email) {
-                alert('请输入您的电子邮箱地址');
+                alert('請輸入您的電子郵件地址');
                 return;
             }
 
-            const subject = encodeURIComponent(`[Linkindnet 咨询] ${name || '匿名'} - 安全方案咨询`);
+            const subject = encodeURIComponent(`[Linkindnet 諮詢] ${name || '匿名'} - 安全方案諮詢`);
             const body = encodeURIComponent(
                 `姓名：${name || '未提供'}\n` +
-                `邮箱：${email}\n` +
-                `留言：${message || '无'}\n\n` +
+                `電子郵件：${email}\n` +
+                `留言：${message || '無'}\n\n` +
                 `---\n` +
-                `此邮件来自 Linkindnet 网站联系表单`
+                `此郵件來自 Linkindnet 網站聯絡表單`
             );
 
             window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
@@ -546,60 +540,61 @@
                 btn_submit: "Transmit Request"
             },
             zh: {
-                hero_badge: "次世代網絡信息安全",
+                hero_badge: "次世代網絡資訊安全",
                 nav_philosophy: "安全理念",
-                nav_products: "解决方案",
-                nav_pricing: "订阅方案",
-                nav_contact: "立即防护",
-                hero_title_1: "筑牢",
-                hero_title_2: "数字疆域的隐形防线",
-                hero_subtitle: "先进的 WiFi 防火墙架构，旨在消除数字噪音，防止数据泄露，并在网络的无形注视下守护您的个人身份。",
-                hero_cta_primary: "探索解决方案",
-                hero_cta_secondary: "联系销售",
-                philosophy_title: "静默的<span class=\"text-cyan-400\">防御架构</span>",
-                philosophy_p1: "在数据即生存货币的时代，隐私不再是默认选项——它是你必须构建的堡垒。林克域 (Linkindnet) 不仅仅是过滤流量；我们要重构您的私人生活与公共网格之间的边界。",
-                philosophy_p2: "我们专有的深度包检测 (DPI) 和启发式分析引擎如同静默的哨兵，在追踪脚本、广告注入向量、資料追蹤和恶意负载到达您的设备之前将其中和化。我们不只是拦截；我们是免疫。",
-                prod_home_badge: "家庭级 // MODEL-X1",
-                prod_ent_badge: "企业级 // MODEL-Z9",
-                products_title: "软硬协同的防御体系",
-                products_subtitle: "为不同规模的数字存在量身定制的防御机制。",
+                nav_products: "解決方案",
+                nav_pricing: "訂閱方案",
+                nav_contact: "立即防護",
+                hero_title_1: "築牢",
+                hero_title_2: "數位疆域的隱形防線",
+                hero_subtitle: "先進的 WiFi 防火牆架構，旨在消除數位噪音，防止資料外洩，並在網路的無形注視下守護您的個人身分。",
+                hero_cta_primary: "探索解決方案",
+                hero_cta_secondary: "聯絡銷售",
+                philosophy_title: "靜默的<span class=\"text-cyan-400\">防禦架構</span>",
+                philosophy_p1: "在資料即生存貨幣的時代，隱私不再是預設選項——它是您必須構築的堡壘。源自香港的林克域 (Linkindnet) 采用的國際化設備不僅僅是過濾流量；我們要重構您的私人生活與公共網格之間的邊界。",
+                philosophy_p2: "我們專有的深度封包檢測 (DPI) 與啟發式分析引擎如同靜默的哨兵，在追蹤腳本、廣告注入向量、資料追蹤和惡意載荷抵達您的裝置之前將其中和。我們不只是攔截；我們是免疫。",
+                prod_home_badge: "家庭級 // Dell EMC EDGE-610 ",
+                prod_ent_badge: "企業級 // 規格細談",
+                products_title: "軟硬協同的防禦體系",
+                products_subtitle: "為不同規模的數位存在量身訂製的防禦機制。",
                 prod_home_title: "林克域·家庭哨兵",
-                prod_home_desc: "一款时尚、低调的网关，净化您的家庭网络。拦截侵入性广告，防止智能设备被追踪，确保您家人的数字足迹对数据经纪人不可见。",
-                prod_ent_title: "林克域·企业核心",
-                prod_ent_desc: "工业级吞吐量配合军用级加密。专为不容许数据泄露的企业环境设计。具备高级威胁情报和实时异常检测功能。",
-                feat_1: "全球广告拦截数据库",
-                feat_2: "IoT 设备隔离",
-                feat_3: "家长内容过滤",
-                feat_4: "深度包检测 (DPI)",
-                feat_5: "零信任网络访问",
-                feat_6: "7x24 小时安全运营中心集成",
-                pricing_title: "智能订阅方案",
-                pricing_subtitle: "持续更新的威胁数据库与软件功能。",
-                plan_basic_name: "基础卫士",
-                plan_basic_desc: "专为注重隐私的个人设计。",
-                plan_feat_1: "基础广告拦截",
-                plan_feat_2: "恶意软件防护",
-                plan_feat_3: "支持 5 台设备",
-                plan_pro_name: "家庭堡垒",
-                plan_pro_desc: "为现代智能家居提供全面保护。",
-                plan_feat_4: "高级反追踪技术",
-                plan_feat_5: "IoT 设备分段隔离",
-                plan_feat_6: "无限设备支持",
-                plan_feat_7: "优先技术支持",
-                plan_ent_name: "企业护盾",
-                plan_ent_desc: "可扩展的基础设施安全方案。",
-                plan_feat_8: "DPI 与威胁情报",
-                plan_feat_9: "集中式管理仪表盘",
-                plan_feat_10: "SLA 服务等级协议保障",
-                badge_popular: "热门",
-                btn_select: "选择方案",
-                btn_contact: "联系销售",
-                contact_title: "建立安全连接",
-                contact_subtitle: "留下您的数字坐标。我们的安全专家将建立安全通道与您探讨需求。",
+                prod_home_desc: "一款源自美國Dell的時尚、低調的安全閘道，淨化您的家庭網路。防止各式裝置被追蹤，攔截侵入性廣告，確保您的數位足跡對公衆及資料經紀人不可見。",
+                prod_ent_title: "林克域·企業核心",
+                prod_ent_desc: "工業級吞吐量配合軍用級加密。專為不可允許資料外洩的企業環境設計。具備高級威脅情報與即時異常偵測功能。",
+                feat_1: "全球廣告攔截資料庫",
+                feat_2: "IoT 裝置隔離",
+                feat_3: "數據包加密",
+                feat_4: "深度封包檢測 (DPI)",
+                feat_5: "零信任網路存取",
+                feat_6: "7x24 小時資安營運中心整合",
+                feat_7: "設備費用用包含1個月家庭堡壘訂閱方案",
+                pricing_title: "智慧訂閱方案",
+                pricing_subtitle: "擁有持續更新的威脅資料庫與軟體功能。<br>注意：下列費用不包含設備費用。",
+                plan_basic_name: "基礎衛士",
+                plan_basic_desc: "專為注重隱私的個人設計。",
+                plan_feat_1: "基礎廣告攔截",
+                plan_feat_2: "數據追蹤防護",
+                plan_feat_3: "基礎數據包加密",
+                plan_pro_name: "家庭堡壘",
+                plan_pro_desc: "為現代智慧家庭提供全面保護。",
+                plan_feat_4: "高級反追蹤技術",
+                plan_feat_5: "IoT 裝置分段隔離",
+                plan_feat_6: "廣域無綫設備支持",
+                plan_feat_7: "優先技術支援",
+                plan_ent_name: "企業護盾",
+                plan_ent_desc: "可擴充的基礎架構安全方案。",
+                plan_feat_8: "DPI 與威脅情報",
+                plan_feat_9: "集束化管理平臺",
+                plan_feat_10: "SLA 服務等級協議保障",
+                badge_popular: "熱門",
+                btn_select: "選擇方案",
+                btn_contact: "聯絡銷售",
+                contact_title: "建立安全連線",
+                contact_subtitle: "留下您的數位座標。我們的資安專家將建立安全通道與您討論需求。",
                 label_name: "姓名",
-                label_email: "电子邮箱",
-                label_message: "留言 (可选)",
-                btn_submit: "发送请求"
+                label_email: "電子郵件",
+                label_message: "留言 (選填)",
+                btn_submit: "發送請求"
             }
         };
 
@@ -635,6 +630,7 @@
 
         // Initialize on page load
         updateLangButton();
+        updateContent();
     </script>
 </body>
 </html>
