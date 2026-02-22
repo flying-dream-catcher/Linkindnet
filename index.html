@@ -171,16 +171,11 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 flex items-center gap-3 group cursor-pointer">
                     <svg width="300" height="55" viewBox="0 0 300 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="hover:opacity-90 transition-opacity">
-                        <defs>
-                            <linearGradient id="apexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#00F5A0"/>
-                                <stop offset="100%" style="stop-color:#7B61FF"/>
-                            </linearGradient>
-                            <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" stop-color="#00F5A0" stop-opacity="0.6"/>
-                                <stop offset="100%" stop-color="#00F5A0" stop-opacity="0"/>
-                            </radialGradient>
-                        </defs>
+                          <defs>
+                            <style>
+                              .logo-img { width: 72px; height: 72px; }
+                            </style>
+                          </defs>
                         
                         <!-- Left Hex/Link Shape -->
                         <path d="M12 27.5 C12 18, 18 10, 27 10 C36 10, 42 18, 42 27.5 C42 37, 36 45, 27 45 C18 45, 12 37, 12 27.5 Z" 
@@ -190,19 +185,15 @@
                         <path d="M32 27.5 C32 18, 38 10, 47 10 C56 10, 62 18, 62 27.5 C62 37, 56 45, 47 45 C38 45, 32 37, 32 27.5 Z" 
                               class="hex-stroke" opacity="0.95"/>
                         
-                        <!-- Central pulse dot -->
-                        <circle cx="37" cy="27.5" r="4" fill="#00F5A0" class="animate-pulse-slow"/>
-                        <circle cx="37" cy="27.5" r="8" fill="url(#pulseGlow)" opacity="0.6"/>
-                        
-                        <!-- Micro accent: top arrow tip -->
-                        <circle cx="37" cy="7" r="2" fill="#7B61FF"/>
+                        <!-- GitHub Logo -->
+                        <image x="30" y="-8" width="74" height="74" href="https://raw.githubusercontent.com/flying-dream-catcher/Linkindnet/292dd53c41170ff1e640df2c9618971efef05890/logo.svg"/>
                         
                         <!-- Company Name -->
-                        <text x="70" y="32" class="wordmark">LinkindNet</text>
-                        <text x="200" y="32" class="wordmark1">林克域</text>
+                        <text x="98" y="32" class="wordmark">LinkindNet</text>
+                        <text x="220" y="32" class="wordmark1">林克域</text>
                         
                         <!-- Tagline -->
-                        <text x="100" y="46" font-family="'Inter', sans-serif" font-size="8" fill="#94A3B8" letter-spacing="0.6">Where everything is fortified</text>
+                        <text x="125" y="46" font-family="'Inter', sans-serif" font-size="8" fill="#94A3B8" letter-spacing="0.6">Where everything is fortified</text>
                     </svg>
                 </div>
                 <div class="hidden md:block">
@@ -652,5 +643,4 @@
 
                         </body>
                         </html>
-
                     
